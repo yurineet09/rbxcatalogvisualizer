@@ -158,7 +158,7 @@ function render() {
   // categories that do not load: grey text, not clickable, with a tip
   const off = $("#cats-off"); off.innerHTML = "";
   if (state.source !== "community") UNAVAILABLE_CATS.forEach(name => {
-    const s = el(`<span class="tab off" tabindex="0" aria-disabled="true" data-tip="Currently unavailable for analysis" title="Currently unavailable for analysis">${esc(name)}</span>`);
+const s = el(`<span class="tab off" aria-disabled="true" title="Currently unavailable for analysis">${esc(name)}</span>`);
     off.append(s);
   });
   $("#listtitle").textContent = `${state.cat === "All" ? "All Items" : state.cat}, ${SORTS[state.sort]}`;
