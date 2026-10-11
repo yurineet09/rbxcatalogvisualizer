@@ -350,11 +350,8 @@ body.adv .advonly{display:block}
 }
 
 
-/* ===== Unavailable categories (grey, not clickable, with tip) ===== */
+/* ===== Unavailable categories (grey, not clickable) ===== */
 #cats-off{margin-top:8px;padding-top:6px;border-top:1px dotted #bbb}
 #cats-off:empty{display:none}
-.tab.off{position:relative;color:#999;cursor:not-allowed;font-weight:normal;background:none;outline:none}
+.tab.off{color:#999;cursor:not-allowed;font-weight:normal;background:none}
 .tab.off:hover{background:none}
-.tab.off::after{content:attr(data-tip);display:none;position:absolute;left:0;top:100%;z-index:70;width:max-content;max-width:210px;
-  background:#333;color:#fff;font:11px/1.35 Arial,Helvetica,sans-serif;padding:5px 8px;border-radius:3px;box-shadow:0 2px 6px rgba(0,0,0,.3);pointer-events:none}
-.tab.off:hover::after,.tab.off:focus::after{display:block}
